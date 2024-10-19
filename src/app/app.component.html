@@ -1,0 +1,11 @@
+<section>
+  <div>
+    Enter Username
+    <input type="text" [(ngModel)]="userName" />
+  </div>
+  <div class="">
+    Enter Password
+    <input type="text" [(ngModel)]="password" />
+  </div>
+  <button type="button" [disabled]="!(userName && password)">Submit</button>
+</section>
